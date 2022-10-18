@@ -1,0 +1,158 @@
+/*bootsrtap logo link*/
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+/* google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mali:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Mali', cursive;
+
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.one,
+.six {
+    grid-column: 1 / -1;
+    background: rgb(10, 119, 138);
+    height: 8vh;
+}
+
+.div-2-img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    border: 2px solid;
+    border-radius: 500px;
+    display: block;
+    margin: auto;
+    background: rgb(226, 230, 10);
+}
+
+.two,
+.three,
+.four,
+.five {
+    grid-column: 1 / -1;
+    background: rgb(16, 189, 137);
+    min-height: 100vh;
+    border: 1px solid white;
+}
+
+.two,
+.three,
+.four,
+.five {
+    display: flex;
+}
+
+.two-1,
+.two-2,
+.three-1,
+.three-2,
+.four-1,
+.four-2,
+.five-1,
+.five-2 {
+    min-width: 50%;
+    min-height: 100vh;
+}
+
+.two-2,
+.three-1,
+.four-2,
+.five-1 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.two-2 {
+    background-image: url(/4.jpg);
+}
+
+.three-1 {
+    background-image: url(/5.jpg);
+}
+
+.four-2 {
+    background-image: url(/6.jpg);
+}
+
+.five-1 {
+    background-image: url(/7.jpg);
+}
+
+
+
+
+
+
+
+
+.four-1>div>video {
+    width: 300px;
+    margin: 0.5rem;
+    border-radius: 10px;
+}
+
+.five-2>img {
+    width: 100%;
+    max-width: 800px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:1500px) {
+
+    .two,
+    .four {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .three,
+    .five {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .two-1,
+    .two-2,
+    .three-1,
+    .three-2,
+    .four-1,
+    .four-2,
+    .five-1,
+    .five-2 {
+        min-width: 100%;
+        min-height: 100vh;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+    .two-2,
+    .three-1,
+    .four-2,
+    .five-1 {
+        height: 50vh;
+    }
+}
